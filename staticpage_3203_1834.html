@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>Wooden Theme</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+<link rel="stylesheet" href="../../assets/css/fonts.css" />
+
+<link rel="stylesheet" href="css/jquery.mobile-1.4.0.css" />
+
+<link rel="stylesheet" href="css/wooden_theme.css" />
+
+<link rel="stylesheet" href="css/common_layout.css" />
+
+<link rel="stylesheet" href="css/static_page.css" />
+
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+
+<script src="js/jquery.mobile-1.4.0.js"></script>
+
+<script type="text/javascript">
+
+   $(document).ready(function() {
+
+      $('#back-link').click(function() {
+
+         history.go(-1) 
+
+       });
+
+   });
+
+</script>
+
+
+
+
+
+<style type="text/css">
+
+img {
+
+	max-width:100%;
+
+}
+
+</style>
+
+</head>
+
+
+
+<body>
+
+<!-- Start of first page -->
+
+<div data-role="page" id="theme_layout" class="theme_bg"> 
+
+  
+
+  <!-- Header Starts Here -->
+
+  <div data-role="header"> <a class="refresh_link" id="back-link" href="#"><img src="images/back_btn.png" alt="home icon" /></a>
+
+    <h1>page two test</h1>
+
+    <a class="help_link"><img src="images/help_icon.png" alt="help icon" /></a> </div>
+
+  <!-- /header ends here --> 
+
+  <!-- Static Page starts here -->
+
+  
+
+  <div class="staticPage">
+
+  
+
+  <br>
+Black-box testing[edit]
+Main article: Black-box testing
+
+
+Black box diagram
+Black-box testing treats the software as a "black box", examining functionality without any knowledge of internal implementation. The tester is only aware of what the software is supposed to do, not how it does it.[23] Black-box testing methods include: equivalence partitioning, boundary value analysis, all-pairs testing, state transition tables, decision table testing, fuzz testing, model-based testing, use case testing, exploratory testing and specification-based testing.
+Specification-based testing aims to test the functionality of software according to the applicable requirements.[24] This level of testing usually requires thorough test cases to be provided to the tester, who then can simply verify that for a given input, the output value (or behavior), either "is" or "is not" the same as the expected value specified in the test case. Test cases are built around specifications and requirements, i.e., what the application is supposed to do. It uses external descriptions of the software, including specifications, requirements, and designs to derive test cases. These tests can be functional or non-functional, though usually functional.
+Specification-based testing may be necessary to assure correct functionality, but it is insufficient to guard against complex or high-risk situations.[25]
+One advantage of the black box technique is that no programming knowledge is required. Whatever biases the programmers may have had, the tester likely has a different set and may emphasize different areas of functionality. On the other hand, black-box testing has been said to be "like a walk in a dark labyrinth without a flashlight."[26] Because they do not examine the source code, there are situations when a tester writes many test cases to check something that could have been tested by only one test case, or leaves some parts of the program untested.
+This method of test can be applied to all levels of software testing: unit, integration, system and acceptance. It typically comprises most if not all testing at higher levels, but can also dominate unit testing as well.
+Visual testing[edit]
+The aim of visual testing is to provide developers with the ability to examine what was happening at the point of software failure by presenting the data in such a way that the developer can easily ?nd the information he or she requires, and the information is expressed clearly.[27][28]
+At the core of visual testing is the idea that showing someone a problem (or a test failure), rather than just describing it, greatly increases clarity and understanding. Visual testing therefore requires the recording of the entire test process – capturing everything that occurs on the test system in video format. Output videos are supplemented by real-time tester input via picture-in-a-picture webcam and audio commentary from microphones.
+Visual testing provides a number of advantages. The quality of communication is increased dramatically because testers can show the problem (and the events leading up to it) to the developer as opposed to just describing it and the need to replicate test failures will cease to exist in many cases. The developer will have all the evidence he or she requires of a test failure and can instead focus on the cause of the fault and how it should be fixed.
+Visual testing is particularly well-suited for environments that deploy agile methods in their development of software, since agile methods require greater communication between testers and developers and collaboration within small teams.[citation needed]
+Ad hoc testing and exploratory testing are important methodologies for checking software integrity, because they require less preparation time to implement, while the important bugs can be found quickly. In ad hoc testing, where testing takes place in an improvised, impromptu way, the ability of a test tool to visually record everything that occurs on a system becomes very important.[clarification needed][citation needed]
+Visual testing is gathering recognition in customer acceptance and usability testing, because the test can be used by many individuals involved in the development process.[citation needed] For the customer, it becomes easy to provide detailed bug reports and feedback, and for program users, visual testing can record user actions on screen, as well as their voice and image, to provide a complete picture at the time of software failure for the developer.
+Further information: Graphical user interface testing
+Grey-box testing[edit]
+Main article: Gray box testing
+Grey-box testing (American spelling: gray-box testing) involves having knowledge of internal data structures and algorithms for purposes of designing tests, while executing those tests at the user, or black-box level. The tester is not required to have full access to the software's source code.[29][not in citation given] Manipulating input data and formatting output do not qualify as grey-box, because the input and output are clearly outside of the "black box" that we are calling the system under test. This distinction is particularly important when conducting integration testing between two modules of code written by two different developers, where only the interfaces are exposed for test.
+However, tests that require modifying a back-end data repository such as a database or a log file does qualify as grey-box, as the user would not normally be able to change the data repository in normal production operations.[citation needed] Grey-box testing may also include reverse engineering to determine, for instance, boundary values or error messages.
+By knowing the underlying concepts of how the software works, the tester makes better-informed testing choices while testing the software from outside. Typically, a grey-box tester will be permitted to set up an isolated testing environment with activities such as seeding a database. The tester can observe the state of the product being tested after performing certain actions such as executing SQL statements against the database and then executing queries to ensure that the expected changes have been reflected. Grey-box testing implements intelligent test scenarios, based on limited information. This will particularly apply to data type handling, exception handling, and so on.[30]
+Testing levels[edit]
+
+Tests are frequently grouped by where they are added in the software development process, or by the level of specificity of the test. The main levels during the development process as defined by the SWEBOK guide are unit-, integration-, and system testing that are distinguished by the test target without implying a specific process model.[31] Other test levels are classified by the testing objective.[31]
+Unit testing[edit]
+Main article: Unit testing
+Unit testing, also known as component testing, refers to tests that verify the functionality of a specific section of code, usually at the function level. In an object-oriented environment, this is usually at the class level, and the minimal unit tests include the constructors and destructors.[32]
+These types of tests are usually written by developers as they work on code (white-box style), to ensure that the specific function is working as expected. One function might have multiple tests, to catch corner cases or other branches in the code. Unit testing alone cannot verify the functionality of a piece of software, but rather is used to assure that the building blocks the software uses work independently of each other.
+Unit testing is a software development process that involves synchronized application of a broad spectrum of defect prevention and detection strategies in order to reduce software development risks, time, and costs. It is performed by the software developer or engineer during the construction phase of the software development lifecycle. Rather than replace traditional QA focuses, it augments it. Unit testing aims to eliminate construction errors before code is promoted to QA; this strategy is intended to increase the quality of the resulting software as well as the efficiency of the overall development and QA process.
+Depending on the organization's expectations for software development, unit testing might include static code analysis, data flow analysis metrics analysis, peer code reviews, code coverage analysis and other software verification practices.
+Integration testing[edit]
+Main article: Integration testing
+Integration testing is any type of software testing that seeks to verify the interfaces between components against a software design. Software components may be integrated in an iterative way or all together ("big bang"). Normally the former is considered a better practice since it allows interface issues to be located more quickly and fixed.
+Integration testing works to expose defects in the interfaces and interaction between integrated components (modules). Progressively larger groups of tested software components corresponding to elements of the architectural design are integrated and tested until the software works as a system.[33]
+Component interface testing[edit]
+The practice of component interface testing can be used to check the handling of data passed between various units, or subsystem components, beyond full integration testing between those units.[34][35] The data being passed can be considered as "message packets" and the range or data types can be checked, for data generated from one unit, and tested for validity before being passed into another unit. One option for interface testing is to keep a separate log file of data items being passed, often with a timestamp logged to allow analysis of thousands of cases of data passed between units for days or weeks. Tests can include checking the handling of some extreme data values while other interface variables are passed as normal values.[34] Unusual data values in an interface can help explain unexpected performance in the next unit. Component interface testing is a variation of black-box testing,[35] with the focus on the data values beyond just the related actions of a subsystem component.
+System testing[edit]
+Main article: System testing
+System testing, or end-to-end testing, tests a completely integrated system to verify that it meets its requirements.[36] For example, a system test might involve testing a logon interface, then creating and editing an entry, plus sending or printing results, followed by summary processing or deletion (or archiving) of entries, then logoff.
+In addition, the software testing should ensure that the program, as well as working as expected, does not also destroy or partially corrupt its operating environment or cause other processes within that environment to become inoperative (this includes not corrupting shared memory, not consuming or locking up excessive resources and leaving any parallel processes unharmed by its presence).[citation needed]
+Acceptance testing[edit]
+Main article: Acceptance testing
+At last the system is delivered to the user for Acceptance testing.
+Testing Types[edit]
+
+Installation testing[edit]
+Main article: Installation testing
+An installation test assures that the system is installed correctly and working at actual customer's hardware.
+Compatibility testing[edit]
+Main article: Compatibility testing
+A common cause of software failure (real or perceived) is a lack of its compatibility with other application software, operating systems (or operating system versions, old or new), or target environments that differ greatly from the original (such as a terminal or GUI application intended to be run on the desktop now being required to become a web application, which must render in a web browser). For example, in the case of a lack of backward compatibility, this can occur because the programmers develop and test software only on the latest version of the target environment, which not all users may be running. This results in the unintended consequence that the latest work may not function on earlier versions of the target environment, or on older hardware that earlier versions of the target environment was capable of using. Sometimes such issues can be fixed by proactively abstracting operating system functionality into a separate program module or library.
+Smoke and sanity testing[edit]
+Sanity testing determines whether it is reasonable to proceed with further testing.
+Smoke testing consists of minimal attempts to operate the software, designed to determine whether there are any basic problems that will prevent it from working at all. Such tests can be used as build verification test.
+Regression testing[edit]
+Main article: Regression testing
+Regression testing focuses on finding defects after a major code change has occurred. Specifically, it seeks to uncover software regressions, as degraded or lost features, including old bugs that have come back. Such regressions occur whenever software functionality that was previously working, correctly, stops working as intended. Typically, regressions occur as an unintended consequence of program changes, when the newly developed part of the software collides with the previously existing code. Common methods of regression testing include re-running previous sets of test-cases and checking whether previously fixed faults have re-emerged. The depth of testing depends on the phase in the release process and the risk of the added features. They can either be complete, for changes added late in the release or deemed to be risky, or be very shallow, consisting of positive tests on each feature, if the changes are early in the release or deemed to be of low risk. Regression testing is typically the largest test effort in commercial software development,[37] due to checking numerous details in prior software features, and even new software can be developed while using some old test-cases to test parts of the new de
+
+  </div>
+
+  
+
+  <!-- Static Page Ends here -->
+
+  
+
+</div>
+
+<!-- /page --> 
+
+
+
+</body>
+
+</html>
